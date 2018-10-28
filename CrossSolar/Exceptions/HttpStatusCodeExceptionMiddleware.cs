@@ -31,7 +31,7 @@ namespace CrossSolar.Exceptions
                         "The response has already started, the http status code middleware will not be executed.");
                     throw;
                 }
-
+           
                 context.Response.Clear();
                 context.Response.StatusCode = ex.StatusCode;
                 context.Response.ContentType = ex.ContentType;
